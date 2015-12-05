@@ -5,13 +5,10 @@ var cityCircle;
 var options = {
 	radius:10,
 	strokeOpacity:1,
-	strokeWeight:0.5,
+	strokeWeight:0.01,
 	fillOpacity:1, 
 	strokeColor: "#FFFFFF"
 };
-
-var polygonOptions = {
-}
 
 var infoWindow = new google.maps.InfoWindow();  
 
@@ -36,14 +33,13 @@ function x3(theta){
 function y3(theta){
 	return -1 * b * Math.sin(-1* theta * Math.PI/ 180)
 }
-var polygons = {};
+
 var vehicles = {};
 var ages = [];
 var allCircles =[];
 var circlesToRemove = [];
 var circles = {};
 var itemsChanged = 0;
-var opacity = 0;
 
 function initialize() {
 	var mapOptions = {
@@ -58,7 +54,7 @@ function initialize() {
 	        type: "GET",
 	        url: "http://restbus.info/api/agencies/ttc/vehicles",
 	        success: function(response) {
-	        	// console.log("recieved response");
+	        	console.log("recieved response");
 	        	itemsChanged = 0;
 	        	var rl = response.length;
 
@@ -66,18 +62,14 @@ function initialize() {
 	        		var id = response[i]["id"];
 	        		var xy = new google.maps.LatLng(parseFloat(response[i]["lat"]), parseFloat(response[i]["lon"]));
 	        		var age = response[i]["secsSinceReport"];
-	        		var heading = response[i]["heading"];
 	        		var color = "#000000";
-	        		// if(age>=30){
-	          //   		color = "#CC0000";
-	          //   	}else if(age>=15){
-	          //   		color = "#000000";
-	          //   	}else{
-	          //   		color = "#008900";
-	          //   	}
-
-	          		opacity = (100 - 5.0/3.0 * age)/ 100;
-	          		// console.log(opacity);
+	        		if(age>=30){
+	            		color = "#CC0000";
+	            	}else if(age>=15){
+	            		color = "#000000";
+	            	}else{
+	            		color = "#008900";
+	            	}
 	        		if (!(id in vehicles)){
 	        			vehicles[id] = {
 	        				"xy": xy,
@@ -93,12 +85,10 @@ function initialize() {
 							vehicles[id]["xy"] = xy;
 							options.center = xy;
 							options.fillColor = color;
-							options.fillOpacity = opacity;
 							circles[id] = new google.maps.Circle(options);
 						}else{
 							circles[id].setOptions({
-								"fillColor": color, 
-								"fillOpacity": opacity
+								"fillColor": color
 							})
 						}
 	        		}
