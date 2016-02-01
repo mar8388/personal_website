@@ -12,3 +12,11 @@
 .black{
 	color:#000000;
 }
+
+h3:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -65px; 
+  height: 65px; 
+  visibility: hidden; 
+}
