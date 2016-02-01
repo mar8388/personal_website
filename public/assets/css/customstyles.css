@@ -20,3 +20,11 @@ h3:before {
   height: 65px; 
   visibility: hidden; 
 }
+
+h2:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -65px; 
+  height: 65px; 
+  visibility: hidden; 
+}
