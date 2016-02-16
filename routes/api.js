@@ -6,8 +6,7 @@ var request = require('request');
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
-
-	console.log ('asldfjasdf;klajsdf;');
+	console.log ('IT WORKS');
 	var result = '';
 	var searchURL = 'https://www.bing.com/images/search?q=djkhaled';
 	if(req.query.search!='' && req.query.search!=null){
