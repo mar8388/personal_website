@@ -20,12 +20,12 @@ router.get('/', function(req, res, next) {
 		result = $('#main .content .row .item div img').attr('src');
 		console.log($('#main .content .row .item div img').attr('src'));
 		console.log('Posting to slack');
-		// request('https://hooks.slack.com/services/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', {'json': {'text': 'TEST'}}, function(err, res, bod){
-		// 	if (!err)
-		// 		console.log('posted to webhook');
-		// 	else 
-		// 		console.log ('Error: ' + err); 
-		// });
+		request('https://hooks.slack.com/services/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', {'json': {'text': 'TEST', 'channel': '#projectblessup', 'username': 'DJ Khaled'}}, function(err, res, bod){
+			if (!err)
+				console.log('posted to webhook');
+			else 
+				console.log ('Error: ' + err); 
+		});
 
 
 		res.send(result);
