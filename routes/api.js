@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
 		// $$ = cheerio.load($('#main .content .row').html());
 		// console.log($$('.item div').get(1));
 		result = $('#main .content .row .item div img').attr('src');
-		console.log($('#main .content .row .item div img').attr('src'));
+		// console.log($('#main .content .row .item div img').attr('src'));
 		console.log('Posting to slack');
 		request('https://hooks.slack.com/services/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', {"text": "Bless up", "channel": "#projectblessup", "username": "DJ Khaled"}, function(err, res, bod){
 			console.log(bod);
