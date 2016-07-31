@@ -1,5 +1,4 @@
-.link
-{
+.link {
    color:#0404B4;
    text-decoration: none; 
    background-color: none;
@@ -9,7 +8,7 @@
 	color: #222;
 }
 
-.black{
+.black {
 	color:#000000;
 }
 
@@ -27,4 +26,8 @@ h2:before {
   margin-top: -65px; 
   height: 65px; 
   visibility: hidden; 
+}
+
+.subtitle {
+  margin-left:-2rem;
 }
