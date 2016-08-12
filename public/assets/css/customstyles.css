@@ -46,3 +46,12 @@ h2:before {
 .subtitle {
   margin-left:-2rem;
 }
+
+#blog {
+  background: #F01B00;
+  color: #FFF;
+}
+
+#blog h1, #blog h2, #blog h3, #blog h4, #blog h5, #blog h6, #blog a:link, #blog a:visited, #blog a:hover, #blog a:active{
+  color: #FFF;
+}
