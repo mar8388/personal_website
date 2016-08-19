@@ -1,10 +1,10 @@
 import React from 'react';
 
-const WebsiteLayout = (props) => {
+import NavBar from './NavBar.jsx';
+
+const WebsiteLayout = () => {
 	return (
-		<div>
-			Hello
-		</div>
+		<NavBar />
 	);
 };
 
