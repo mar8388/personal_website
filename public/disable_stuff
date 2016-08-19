@@ -1,0 +1,32 @@
+#!/bin/bash
+# Use at your own risk. Disabling security is against firm policy. 
+if [ "$#" == 1 ]; then
+	if [ "$1" == "disable" ]; then
+		echo "Disabling CMA"
+		sudo pkill cma							# Stop weird proxy process running on :8081
+		sudo launchctl unload /Library/LaunchDaemons/com.mcafee.agent.cma.plist
+
+		echo "Disabling McAfee OAS"
+		sudo /usr/local/McAfee/AntiMalware/VSControl stopoas		# Stop McAfee on-access scanning
+
+		echo "Disabling gatekeeper"
+		sudo spctl --master-disable					# Disable gatekeeper
+	fi
+
+	if [ "$1" == "enable" ]; then
+		echo "Enabling CMA"
+		sudo launchctl load /Library/LaunchDaemons/com.mcafee.agent.cma.plist
+
+		echo "Enabling McAfee OAS"
+		sudo /usr/local/McAfee/AntiMalware/VSControl startoas
+
+		echo "Enabling Gatekeeper"
+		sudo spctl --master-enable
+	fi
+
+else
+	echo "Collection of commands to enable or disable Deloitte software that gets in the way of development"
+	echo "To use, simply run this file as root \"sudo ./stop_d_apps [enable|disable]\""
+fi
+
+
