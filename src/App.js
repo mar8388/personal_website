@@ -1,16 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import WebsiteLayout from 'Layout/WebsiteLayout.js';
+import WebsiteLayout from './Layout/WebsiteLayout.jsx';
 
-import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <WebsiteLayout />
-    );
-  }
-}
-
+export const App = (props) => {
+	return (
+		<WebsiteLayout {...props} />
+	);
+};
 export default App;
