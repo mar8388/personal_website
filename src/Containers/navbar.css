@@ -1,0 +1,12 @@
+.bottom-padding {
+	padding-bottom: 50px; 
+}
+
+a {
+	color: white !important;
+}
+
+.navbar-black {
+	background-color: #000000 !important;
+	border-color: #000000;
+}
