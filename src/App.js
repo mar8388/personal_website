@@ -5,6 +5,7 @@ import { testAction } from './Store/Shared/sharedActions.js';
 
 import Accounts from './Containers/accounts.js';
 import Navbar from './Containers/navbar.js';
+import Image from './Components/image.js';
 
 import './App.css';
 
@@ -26,10 +27,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar/>
-        <div className="App-header">
-          <h2>Hello React</h2>
-          <button className="btn btn-danger dropdown-toggle" onClick={this.props.testAction}>🔥 an action </button>
-        </div>
+        <Image />
         <Accounts />
       </div>
     );
