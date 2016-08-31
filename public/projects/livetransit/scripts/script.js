@@ -68,7 +68,7 @@ function initialize() {
 	function doStuff(){
 		$.ajax({
 	        type: "GET",
-	        url: "http://restbus.info/api/agencies/ttc/vehicles",
+	        url: "https://georgejose.com:3001/agencies/ttc/vehicles",
 	        success: function(response) {
 	        	// console.log("recieved response");
 	        	itemsChanged = 0;
