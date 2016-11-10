@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/gejose
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://georgejose.com
+  * I am gejose (https://keybase.io/gejose) on keybase.
+  * I have a public key ASB-_Pnjn5YSu9jHyI37Y-9bMxlY31kdv2dIEvA_uqHGawo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01207efcf9e39f9612bbd8c7c88dfb63ef5b331958df591dbf674812f03fbaa1c66b0a",
+            "host": "keybase.io",
+            "kid": "01207efcf9e39f9612bbd8c7c88dfb63ef5b331958df591dbf674812f03fbaa1c66b0a",
+            "uid": "5aa5863d5e389476e55622e1cd28fc19",
+            "username": "gejose"
+        },
+        "service": {
+            "hostname": "georgejose.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1478803195,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1478803175,
+        "hash": "827d53e6932c9a016f110d8d228bc053308e5137e0ec2615c917a2bf2bf57162ebf1821d2fc2031ca1f1b216e6b36c8e9bc45e41f224cfd5ed222f13d79d0395",
+        "seqno": 707305
+    },
+    "prev": "ced15bc4180dc22bc15e2540bdfda74a649521144be8274d4461d5681a8ea57d",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgfvz545+WErvYx8iN+2PvWzMZWN9ZHb9nSBLwP7qhxmsKp3BheWxvYWTFAvR7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwN2VmY2Y5ZTM5Zjk2MTJiYmQ4YzdjODhkZmI2M2VmNWIzMzE5NThkZjU5MWRiZjY3NDgxMmYwM2ZiYWExYzY2YjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwN2VmY2Y5ZTM5Zjk2MTJiYmQ4YzdjODhkZmI2M2VmNWIzMzE5NThkZjU5MWRiZjY3NDgxMmYwM2ZiYWExYzY2YjBhIiwidWlkIjoiNWFhNTg2M2Q1ZTM4OTQ3NmU1NTYyMmUxY2QyOGZjMTkiLCJ1c2VybmFtZSI6Imdlam9zZSJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiZ2Vvcmdlam9zZS5jb20iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xOCJ9LCJjdGltZSI6MTQ3ODgwMzE5NSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDc4ODAzMTc1LCJoYXNoIjoiODI3ZDUzZTY5MzJjOWEwMTZmMTEwZDhkMjI4YmMwNTMzMDhlNTEzN2UwZWMyNjE1YzkxN2EyYmYyYmY1NzE2MmViZjE4MjFkMmZjMjAzMWNhMWYxYjIxNmU2YjM2YzhlOWJjNDVlNDFmMjI0Y2ZkNWVkMjIyZjEzZDc5ZDAzOTUiLCJzZXFubyI6NzA3MzA1fSwicHJldiI6ImNlZDE1YmM0MTgwZGMyMmJjMTVlMjU0MGJkZmRhNzRhNjQ5NTIxMTQ0YmU4Mjc0ZDQ0NjFkNTY4MWE4ZWE1N2QiLCJzZXFubyI6OSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEAc8FGI5ALyw/DF17OCNWSInKuvbFa61f1v2RSTxH6T/4rGqGKKwi1JhYOdWbRREYokXyhMiWstvv9tpL5jtYMEqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgnWh7z3Vb+26bRnn9VEN7cPQD3QRWkZlGs3gjHosMQe6jdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gejose
+
+==================================================================
