@@ -68,7 +68,7 @@ function initialize() {
 	function doStuff(){
 		$.ajax({
 	        type: "GET",
-	        url: "https://georgejose.com:3001/agencies/ttc/vehicles",
+	        url: "https://georgejose.com:3002/agencies/ttc/vehicles",
 	        success: function(response) {
 	        	// console.log("recieved response");
 	        	itemsChanged = 0;
