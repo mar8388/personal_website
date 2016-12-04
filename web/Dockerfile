@@ -13,7 +13,7 @@ COPY ./package.json /personal_website-packages/package.json
 RUN cd /personal_website-packages/ && yarn install
 
 COPY . /personal_website
-RUN rm -rf /personal_website/node_modules
+RUN rm -rf /personal_website/node_modules /personal_website/public
 RUN mv /personal_website-packages/node_modules /personal_website/
 
 WORKDIR /personal_website
