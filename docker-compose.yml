@@ -1,5 +1,6 @@
 version: '2'
 services:
+
   web:
     build:
       context: web
@@ -10,6 +11,14 @@ services:
       - '8080:8080'
     volumes:
       - ./web/public:/personal_website/public
+
+  maps-backend:
+    build:
+      context: maps
+      dockerfile: 'Dockerfile'
+    ports:
+      - '3000:3000'
+
   haproxy:
     build:
       context: haproxy
@@ -17,18 +26,9 @@ services:
     ports:
       - '80:80'
       - '443:443'
+      - '3002:3002'
     volumes:
       - ./haproxy/ssl:/usr/local/etc/ssl
-  # middleware:
-  #   environment:
-  #     - NODE_ENV=development
-  #   build:
-  #     context: .
-  #     dockerfile: 'config/sails/dockerfile-sails'
-  #   environment:
-  #     - EXCLUDE_PORTS=443
-  #     - VIRTUAL_HOST=*
-  #   ports:
-  #     - '3003:3003'
-  #   volumes:
-  #     - ./middleware/api:/middleware/api:ro
+    links:
+      - maps-backend
+      - web
