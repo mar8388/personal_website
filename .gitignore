@@ -6,4 +6,5 @@
 .DS_Store
 *.log
 haproxy/ssl
+haproxy/ssl_decrypted.zip
 jupyter/notebooks
