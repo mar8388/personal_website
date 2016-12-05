@@ -2,6 +2,7 @@ version: '2'
 services:
 
   web:
+    restart: always
     build:
       context: web
       dockerfile: 'Dockerfile'
@@ -13,6 +14,7 @@ services:
       - ./web/public:/personal_website/public
 
   maps-backend:
+    restart: always
     build:
       context: maps
       dockerfile: 'Dockerfile'
@@ -20,6 +22,7 @@ services:
       - '3000:3000'
 
   haproxy:
+    restart: always
     build:
       context: haproxy
       dockerfile: 'Dockerfile'
@@ -34,6 +37,7 @@ services:
       - web
 
   jupyter:
+    restart: always
     build:
       context: jupyter
       dockerfile: 'Dockerfile'
