@@ -6,3 +6,4 @@
 .DS_Store
 *.log
 haproxy/ssl
+jupyter/notebooks

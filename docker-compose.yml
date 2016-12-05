@@ -8,7 +8,7 @@ services:
     environment:
       - PERSONAL_WEBSITE_PORT=8080
     ports:
-      - '8080:8080'
+      - '800:8080'
     volumes:
       - ./web/public:/personal_website/public
 
@@ -32,3 +32,12 @@ services:
     links:
       - maps-backend
       - web
+
+  jupyter:
+    build:
+      context: jupyter
+      dockerfile: 'Dockerfile'
+    ports:
+      - '500:500'
+    volumes:
+      - ./jupyter/notebooks:/opt/notebooks
