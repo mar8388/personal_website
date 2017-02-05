@@ -4,10 +4,10 @@ services:
   - docker:dind
 
 before_script:
-  - eval $(ssh-agent -s)
-  - ssh-add <(echo "$SSH_PRIVATE_KEY")
-  - mkdir -p ~/.ssh
-  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  - sh -c "eval $(ssh-agent -s)""
+  - sh -c "ssh-add <(echo "$SSH_PRIVATE_KEY")""
+  - sh -c "mkdir -p ~/.ssh"
+  - sh -c "'[[ -f /.dockerenv ]] && echo -e \"Host *\n\tStrictHostKeyChecking no\n\n\" > ~/.ssh/config'"
 
 stages:
   - build
