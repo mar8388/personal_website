@@ -1,4 +1,4 @@
-image: georgejose/alpine:latest
+image: georgejose/docker:latest
 
 services:
   - docker:dind
