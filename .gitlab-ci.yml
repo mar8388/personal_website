@@ -15,4 +15,5 @@ stages:
 deploy:
   stage: deploy
   script:
+    - ssh-add -l
     - ssh ubuntu@georgejose.com 'cd personal_website && git pull --all'
