@@ -16,5 +16,5 @@ deploy:
   script:
     - ssh-add -l
     - ssh ubuntu@georgejose.com 'cd personal_website && git pull --all && '
-    - ssh ubuntu@georgejose.com 'docker-compose build'
-    - ssh ubuntu@georgejose.com 'docker-compose down && docker-compose up -d'
+    - ssh ubuntu@georgejose.com 'cd personal_website && docker-compose build'
+    - ssh ubuntu@georgejose.com 'cd personal_website && docker-compose down && docker-compose up -d'
