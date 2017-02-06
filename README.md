@@ -1,7 +1,7 @@
-# personal_website
+# [http://georgejose.com](https://georgejose.com)
 Source code for my personal website at www.georgejose.com. Please remove all private information if you wish to fork this. 
 
-##How to use
+## How to use
 
 ### Using Docker (Recommended)
 - Install docker

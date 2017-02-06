@@ -1,0 +1,20 @@
+image: georgejose/alpine:latest
+
+before_script:
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$SSH_PRIVATE_KEY")
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+stages:
+  - deploy
+
+deploy:
+  only:
+    - master
+  stage: deploy
+  script:
+    - ssh-add -l
+    - ssh ubuntu@georgejose.com 'cd personal_website && git pull --all && '
+    - ssh ubuntu@georgejose.com 'docker-compose build'
+    - ssh ubuntu@georgejose.com 'docker-compose down && docker-compose up -d'
